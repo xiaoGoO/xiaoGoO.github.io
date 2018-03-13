@@ -4,6 +4,30 @@
 
     
   <url>
+    <loc>https://xiaoGoO.github.io.git/2018/02/25/Structure/%E6%9E%B6%E6%9E%84%E6%A8%A1%E5%BC%8F%E4%B9%8BMVX/</loc>
+    <lastmod>2018-03-13T15:29:14.000Z</lastmod>
+    <data>
+        <display>
+        <title>架构模式之MVX</title>
+        <pubTime>2018-02-25T15:08:22.000Z</pubTime>
+        
+        <tag>MVVM</tag>
+         
+        <tag>MVC</tag>
+         
+        <tag>MVP</tag>
+         
+         
+           
+             
+              <breadCrumb title="Structure" url="https://xiaoGoO.github.io.git/categories/Structure/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://xiaoGoO.github.io.git/2017/02/03/Node/node-js%E7%89%88%E6%9C%AC%E7%AE%A1%E7%90%86/</loc>
     <lastmod>2018-03-13T15:09:52.196Z</lastmod>
     <data>
@@ -19,43 +43,6 @@
            
              
               <breadCrumb title="Node" url="https://xiaoGoO.github.io.git/categories/Node/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://xiaoGoO.github.io.git/2018/02/25/Structure/%E6%9E%B6%E6%9E%84%E6%A8%A1%E5%BC%8F%E4%B9%8BMVX/</loc>
-    <lastmod>2018-03-13T15:09:47.250Z</lastmod>
-    <data>
-        <display>
-        <title>架构模式之MVX</title>
-        <pubTime>2018-02-25T15:08:22.000Z</pubTime>
-        
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://xiaoGoO.github.io.git/2017/01/01/Shell/007-Shell-%E8%BF%90%E7%AE%97%E7%AC%A6/</loc>
-    <lastmod>2018-03-13T14:43:53.678Z</lastmod>
-    <data>
-        <display>
-        <title>007_Shell_运算符</title>
-        <pubTime>2017-01-01T14:35:15.000Z</pubTime>
-        
-        <tag>脚本</tag>
-         
-        <tag>学习</tag>
-         
-         
-           
-             
-              <breadCrumb title="Shell" url="https://xiaoGoO.github.io.git/categories/Shell/"/>
           
         </display>
     </data>
@@ -113,6 +100,28 @@
         <display>
         <title>005_Shell_注释</title>
         <pubTime>2017-01-01T14:32:29.000Z</pubTime>
+        
+        <tag>脚本</tag>
+         
+        <tag>学习</tag>
+         
+         
+           
+             
+              <breadCrumb title="Shell" url="https://xiaoGoO.github.io.git/categories/Shell/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://xiaoGoO.github.io.git/2017/01/01/Shell/007-Shell-%E8%BF%90%E7%AE%97%E7%AC%A6/</loc>
+    <lastmod>2018-03-13T14:43:53.678Z</lastmod>
+    <data>
+        <display>
+        <title>007_Shell_运算符</title>
+        <pubTime>2017-01-01T14:35:15.000Z</pubTime>
         
         <tag>脚本</tag>
          
