@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title><![CDATA[007_Shell_运算符]]></title>
-    <url>%2F2017%2F01%2F01%2F007-Shell-%E8%BF%90%E7%AE%97%E7%AC%A6%2F</url>
+    <url>%2F2017%2F01%2F01%2FShell%2F007-Shell-%E8%BF%90%E7%AE%97%E7%AC%A6%2F</url>
     <content type="text"><![CDATA[运算符 序 shell 支持多种运算符例如： 算术运算符 关系运算符 布尔运算符 字符串运算符 文件测试运算符 原生的bash不支持算数运算符，需要借助其他命令来完成，例如： awk expr(比较常用) expr 格式 1值=`expr 值1 运算符 值2` 注意: 表达式和运算符之间要有空格，例如 2+2 是不对的，必须写成 2 + 2，这与我们熟悉的大多数编程语言不一样。 完整的表达式要被 包含，注意这个字符不是常用的单引号，在 Esc 键下边。 所有运算符 运算符 | 说明 | 例子 — | — | — | 加 | expr 1 + 1 =&gt; 2 | 减 | expr 2 - 1 =&gt; 1 | 乘 | expr 2 \* 2 =&gt; 4/ | 除 | expr 2 / 2 =&gt; 1% | 除余 | expr 2 % 2 =&gt; 0= | 赋值符 | a=$b 就是将变量b的值赋予给变量a== | 判断符，等于 | [ $a == $b ] 判断变量a是否等于变量b,如果相等返回true，否则false!= | 判断符，不等于 | [ $a != $b ] 与 == 相反]]></content>
       <categories>
         <category>Shell</category>
@@ -14,7 +14,7 @@
   </entry>
   <entry>
     <title><![CDATA[006_Shell_传参]]></title>
-    <url>%2F2017%2F01%2F01%2F006-Shell-%E4%BC%A0%E5%8F%82%2F</url>
+    <url>%2F2017%2F01%2F01%2FShell%2F006-Shell-%E4%BC%A0%E5%8F%82%2F</url>
     <content type="text"><![CDATA[传参 序 我们在开发脚本过程中，少不了会给执行的脚步传递参数 ，就好比我写一个文件复制的脚步，我需要动态传递我需要复制的文件路径和复制后存放的路径，要不然没用一次就改一次代码就太不人性化了。 实例 比我写了个脚本名为：006_shell_params.sh shell123456#获取参数echo &quot;获取执行脚本名称：$0&quot;echo &quot;获取第一个参数：$1&quot;echo &quot;获取第二个参数：$2&quot;echo &quot;参数个数：$#&quot;echo &quot;全部参数：$*&quot; - 执行结果 ![参数结果](http://oiu3bjtd5.bkt.clouddn.com/20180305152021858543372.jpg) 参数处理表 处理 | 说明 — | — $# | 参数个数 $ | 以字符串的方式输出所有参数 , “$“ -&gt; “param0 param1 param2” $@ | 与$相同，但是用 **“*** 号括起来，是以数组形式输出 “$@” -&gt; “param0” “param1” “param2” $! | 运行最后一个进程的ID $- | 显示Shell的当前选项 $? | 显示最后命令的退出状态。0表示没有错误，其他任何值表明有错误。]]></content>
       <categories>
         <category>Shell</category>
@@ -26,7 +26,7 @@
   </entry>
   <entry>
     <title><![CDATA[005_Shell_注释]]></title>
-    <url>%2F2017%2F01%2F01%2F005-Shell-%E6%B3%A8%E9%87%8A%2F</url>
+    <url>%2F2017%2F01%2F01%2FShell%2F005-Shell-%E6%B3%A8%E9%87%8A%2F</url>
     <content type="text"><![CDATA[注释 序 # 号后面的内容都会被注释 注释即脚本运行时不起作用的内容，知用于脚本代码说明。]]></content>
       <categories>
         <category>Shell</category>
@@ -38,7 +38,7 @@
   </entry>
   <entry>
     <title><![CDATA[004_Shell_数组]]></title>
-    <url>%2F2017%2F01%2F01%2F004-Shell-%E6%95%B0%E7%BB%84%2F</url>
+    <url>%2F2017%2F01%2F01%2FShell%2F004-Shell-%E6%95%B0%E7%BB%84%2F</url>
     <content type="text"><![CDATA[数组 序 只支持一维数组 下标由0开始的数组 数组的定义 一般用括号“()” 来表示数组，每个元素用空格隔开 shell1234567891011121314# 变量名称=(元素0 元素1 元素2 ... 元素n-1)# 定义数组变量的方法有三种# 类型一array=(&quot;小关1号&quot; &quot;小关2号&quot; &quot;小关3号&quot;)#类型二array2=( &quot;小燕1号&quot; &quot;小燕2号&quot; &quot;小燕3号&quot;)#类型三array3[0]=&quot;xiaoG一号&quot;array3[1]=&quot;xiaoG二号&quot;array3[2]=&quot;xiaoG三号&quot; 读取数组 读取数组的格式为 ${数组[下标]} shell12345678910111213array=(&quot;小关1号&quot; &quot;小关2号&quot; &quot;小关3号&quot;)# 读取数组第一个值echo $&#123;array[0]&#125;# 读取数组所有元素echo $&#123;array[@]&#125;# 读取数组长度echo $&#123;#array[@]&#125;#或者echo $&#123;#array[*]&#125;#获取数组第n个元素的长度 echo $&#123;#array[n]&#125;]]></content>
       <categories>
         <category>Shell</category>

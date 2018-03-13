@@ -81,18 +81,18 @@
 
 
 
-<meta name="description" content="注释 序 # 号后面的内容都会被注释 注释即脚本运行时不起作用的内容，知用于脚本代码说明。">
+<meta name="description" content="运算符 序  shell 支持多种运算符例如： 算术运算符 关系运算符 布尔运算符 字符串运算符 文件测试运算符   原生的bash不支持算数运算符，需要借助其他命令来完成，例如： awk expr(比较常用)">
 <meta name="keywords" content="脚本,学习">
 <meta property="og:type" content="article">
-<meta property="og:title" content="005_Shell_注释">
-<meta property="og:url" content="https://xiaoGoO.github.io.git/2017/01/01/005-Shell-注释/index.html">
+<meta property="og:title" content="007_Shell_运算符">
+<meta property="og:url" content="https://xiaoGoO.github.io.git/2017/01/01/Shell/007-Shell-运算符/index.html">
 <meta property="og:site_name" content="小关博客">
-<meta property="og:description" content="注释 序 # 号后面的内容都会被注释 注释即脚本运行时不起作用的内容，知用于脚本代码说明。">
+<meta property="og:description" content="运算符 序  shell 支持多种运算符例如： 算术运算符 关系运算符 布尔运算符 字符串运算符 文件测试运算符   原生的bash不支持算数运算符，需要借助其他命令来完成，例如： awk expr(比较常用)">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-03-13T14:38:41.262Z">
+<meta property="og:updated_time" content="2018-03-13T14:43:53.678Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="005_Shell_注释">
-<meta name="twitter:description" content="注释 序 # 号后面的内容都会被注释 注释即脚本运行时不起作用的内容，知用于脚本代码说明。">
+<meta name="twitter:title" content="007_Shell_运算符">
+<meta name="twitter:description" content="运算符 序  shell 支持多种运算符例如： 算术运算符 关系运算符 布尔运算符 字符串运算符 文件测试运算符   原生的bash不支持算数运算符，需要借助其他命令来完成，例如： awk expr(比较常用)">
 
 
 
@@ -122,13 +122,13 @@
 
 
 
-  <link rel="canonical" href="https://xiaoGoO.github.io.git/2017/01/01/005-Shell-注释/"/>
+  <link rel="canonical" href="https://xiaoGoO.github.io.git/2017/01/01/Shell/007-Shell-运算符/"/>
 
 
 
 
 
-  <title>005_Shell_注释 | 小关博客</title>
+  <title>007_Shell_运算符 | 小关博客</title>
   
 
 
@@ -319,7 +319,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://xiaoGoO.github.io.git/2017/01/01/005-Shell-注释/">
+    <link itemprop="mainEntityOfPage" href="https://xiaoGoO.github.io.git/2017/01/01/Shell/007-Shell-运算符/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="xiaoG">
@@ -336,7 +336,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">005_Shell_注释</h1>
+          <h1 class="post-title" itemprop="name headline">007_Shell_运算符</h1>
         
 
         <div class="post-meta">
@@ -348,7 +348,7 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-01-01T22:32:29+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-01-01T22:35:15+08:00">
                 2017-01-01
               </time>
             
@@ -389,8 +389,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2017/01/01/005-Shell-注释/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count gitment-comments-count" data-xid="/2017/01/01/005-Shell-注释/" itemprop="commentsCount"></span>
+                <a href="/2017/01/01/Shell/007-Shell-运算符/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count gitment-comments-count" data-xid="/2017/01/01/Shell/007-Shell-运算符/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -418,12 +418,49 @@
       
 
       
-        <h1 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h1><ul>
+        <h1 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a>运算符</h1><ul>
 <li>序<blockquote>
-<p><strong>#</strong> 号后面的内容都会被注释</p>
-<p>注释即脚本运行时不起作用的内容，知用于脚本代码说明。</p>
-<a id="more"></a>
+<ul>
+<li>shell 支持多种运算符例如：<ul>
+<li>算术运算符</li>
+<li>关系运算符</li>
+<li>布尔运算符</li>
+<li>字符串运算符</li>
+<li>文件测试运算符</li>
+</ul>
+</li>
+<li>原生的bash不支持算数运算符，需要借助其他命令来完成，例如：<ul>
+<li>awk</li>
+<li>expr(比较常用)<a id="more"></a>
+</li>
+</ul>
+</li>
+</ul>
 </blockquote>
+<h2 id="expr"><a href="#expr" class="headerlink" title="expr"></a>expr</h2></li>
+<li><p>格式</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">值=`expr 值1 运算符 值2`</span><br></pre></td></tr></table></figure>
+<blockquote>
+<ul>
+<li>注意:<ul>
+<li>表达式和运算符之间要有空格，例如 2+2 是不对的，必须写成 2 + 2，这与我们熟悉的大多数编程语言不一样。</li>
+<li>完整的表达式要被 <code></code> 包含，注意这个字符不是常用的单引号，在 Esc 键下边。</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+</li>
+<li><p>所有运算符</p>
+<p>  运算符 | 说明    | 例子<br>  —   | —     | —</p>
+<ul>
+<li>| 加      | <code>expr 1 + 1</code> =&gt; 2</li>
+</ul>
+<ul>
+<li>| 减      | <code>expr 2 - 1</code> =&gt; 1</li>
+</ul>
+<ul>
+<li>| 乘      | <code>expr 2 \* 2</code> =&gt; 4<br>/     | 除      | <code>expr 2 / 2</code> =&gt; 1<br>%     | 除余     | <code>expr 2 % 2</code> =&gt; 0<br>=     | 赋值符   | a=$b 就是将变量<strong>b</strong>的值赋予给变量<strong>a</strong><br>==    | 判断符，等于 | [ $a == $b ] 判断变量<strong>a</strong>是否等于变量<strong>b</strong>,如果相等返回<strong>true</strong>，否则<strong>false</strong><br>!=    | 判断符，不等于 | [ $a != $b ] 与 <strong>==</strong> 相反</li>
+</ul>
 </li>
 </ul>
 
@@ -487,8 +524,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/01/01/004-Shell-数组/" rel="next" title="004_Shell_数组">
-                <i class="fa fa-chevron-left"></i> 004_Shell_数组
+              <a href="/2017/01/01/Shell/006-Shell-传参/" rel="next" title="006_Shell_传参">
+                <i class="fa fa-chevron-left"></i> 006_Shell_传参
               </a>
             
           </div>
@@ -496,10 +533,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/01/01/006-Shell-传参/" rel="prev" title="006_Shell_传参">
-                006_Shell_传参 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -649,7 +682,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#注释"><span class="nav-number">1.</span> <span class="nav-text">注释</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#运算符"><span class="nav-number">1.</span> <span class="nav-text">运算符</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#expr"><span class="nav-number">1.1.</span> <span class="nav-text">expr</span></a></li></ol></li></ol></div>
             
 
           </div>

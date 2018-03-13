@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://xiaoGoO.github.io.git/"/>
-  <updated>2018-03-13T14:37:00.208Z</updated>
+  <updated>2018-03-13T14:43:53.678Z</updated>
   <id>https://xiaoGoO.github.io.git/</id>
   
   <author>
@@ -18,10 +18,10 @@
   
   <entry>
     <title>007_Shell_运算符</title>
-    <link href="https://xiaoGoO.github.io.git/2017/01/01/007-Shell-%E8%BF%90%E7%AE%97%E7%AC%A6/"/>
-    <id>https://xiaoGoO.github.io.git/2017/01/01/007-Shell-运算符/</id>
+    <link href="https://xiaoGoO.github.io.git/2017/01/01/Shell/007-Shell-%E8%BF%90%E7%AE%97%E7%AC%A6/"/>
+    <id>https://xiaoGoO.github.io.git/2017/01/01/Shell/007-Shell-运算符/</id>
     <published>2017-01-01T14:35:15.000Z</published>
-    <updated>2018-03-13T14:37:00.208Z</updated>
+    <updated>2018-03-13T14:43:53.678Z</updated>
     
     <content type="html"><![CDATA[<h1 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a>运算符</h1><ul><li>序<blockquote><ul><li>shell 支持多种运算符例如：<ul><li>算术运算符</li><li>关系运算符</li><li>布尔运算符</li><li>字符串运算符</li><li>文件测试运算符</li></ul></li><li>原生的bash不支持算数运算符，需要借助其他命令来完成，例如：<ul><li>awk</li><li>expr(比较常用)<a id="more"></a></li></ul></li></ul></blockquote><h2 id="expr"><a href="#expr" class="headerlink" title="expr"></a>expr</h2></li><li><p>格式</p>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">值=`expr 值1 运算符 值2`</span><br></pre></td></tr></table></figure><blockquote><ul><li>注意:<ul><li>表达式和运算符之间要有空格，例如 2+2 是不对的，必须写成 2 + 2，这与我们熟悉的大多数编程语言不一样。</li><li>完整的表达式要被 <code></code> 包含，注意这个字符不是常用的单引号，在 Esc 键下边。</li></ul></li></ul></blockquote></li><li><p>所有运算符</p><p>  运算符 | 说明    | 例子<br>  —   | —     | —</p><ul><li>| 加      | <code>expr 1 + 1</code> =&gt; 2</li></ul><ul><li>| 减      | <code>expr 2 - 1</code> =&gt; 1</li></ul><ul><li>| 乘      | <code>expr 2 \* 2</code> =&gt; 4<br>/     | 除      | <code>expr 2 / 2</code> =&gt; 1<br>%     | 除余     | <code>expr 2 % 2</code> =&gt; 0<br>=     | 赋值符   | a=$b 就是将变量<strong>b</strong>的值赋予给变量<strong>a</strong><br>==    | 判断符，等于 | [ $a == $b ] 判断变量<strong>a</strong>是否等于变量<strong>b</strong>,如果相等返回<strong>true</strong>，否则<strong>false</strong><br>!=    | 判断符，不等于 | [ $a != $b ] 与 <strong>==</strong> 相反</li></ul></li></ul>]]></content>
     
@@ -55,10 +55,10 @@
   
   <entry>
     <title>006_Shell_传参</title>
-    <link href="https://xiaoGoO.github.io.git/2017/01/01/006-Shell-%E4%BC%A0%E5%8F%82/"/>
-    <id>https://xiaoGoO.github.io.git/2017/01/01/006-Shell-传参/</id>
+    <link href="https://xiaoGoO.github.io.git/2017/01/01/Shell/006-Shell-%E4%BC%A0%E5%8F%82/"/>
+    <id>https://xiaoGoO.github.io.git/2017/01/01/Shell/006-Shell-传参/</id>
     <published>2017-01-01T14:33:47.000Z</published>
-    <updated>2018-03-13T14:34:58.457Z</updated>
+    <updated>2018-03-13T14:43:53.678Z</updated>
     
     <content type="html"><![CDATA[<h1 id="传参"><a href="#传参" class="headerlink" title="传参"></a>传参</h1><ul><li>序<blockquote><p>我们在开发脚本过程中，少不了会给执行的脚步传递参数 ，就好比我写一个文件复制的脚步，我需要动态传递我需要复制的文件路径和复制后存放的路径，要不然没用一次就改一次代码就太不人性化了。</p></blockquote></li><li>实例<ul><li>比我写了个脚本名为：006_shell_params.sh  <figure class="highlight plain"><figcaption><span>shell</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">#获取参数</span><br><span class="line">echo &quot;获取执行脚本名称：$0&quot;</span><br><span class="line">echo &quot;获取第一个参数：$1&quot;</span><br><span class="line">echo &quot;获取第二个参数：$2&quot;</span><br><span class="line">echo &quot;参数个数：$#&quot;</span><br><span class="line">echo &quot;全部参数：$*&quot;</span><br></pre></td></tr></table></figure></li></ul></li></ul><a id="more"></a><pre><code>- 执行结果    ![参数结果](http://oiu3bjtd5.bkt.clouddn.com/20180305152021858543372.jpg)</code></pre><ul><li><p>参数处理表</p><p>   处理 | 说明<br>   — | —<br>   $#  | 参数个数<br>   $<em>  | 以字符串的方式输出所有参数 , “$</em>“ -&gt; “param0 param1 param2”<br>   $@  | 与$<em>相同，但是用 **</em>“*** 号括起来，是以数组形式输出 “$@” -&gt; “param0” “param1” “param2”<br>   $!  | 运行最后一个进程的ID<br>   $-  | 显示Shell的当前选项<br>   $?  | 显示最后命令的退出状态。0表示没有错误，其他任何值表明有错误。</p></li></ul>]]></content>
     
@@ -89,10 +89,10 @@
   
   <entry>
     <title>005_Shell_注释</title>
-    <link href="https://xiaoGoO.github.io.git/2017/01/01/005-Shell-%E6%B3%A8%E9%87%8A/"/>
-    <id>https://xiaoGoO.github.io.git/2017/01/01/005-Shell-注释/</id>
+    <link href="https://xiaoGoO.github.io.git/2017/01/01/Shell/005-Shell-%E6%B3%A8%E9%87%8A/"/>
+    <id>https://xiaoGoO.github.io.git/2017/01/01/Shell/005-Shell-注释/</id>
     <published>2017-01-01T14:32:29.000Z</published>
-    <updated>2018-03-13T14:38:41.262Z</updated>
+    <updated>2018-03-13T14:43:53.678Z</updated>
     
     <content type="html"><![CDATA[<h1 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h1><ul><li>序<blockquote><p><strong>#</strong> 号后面的内容都会被注释</p><p>注释即脚本运行时不起作用的内容，知用于脚本代码说明。</p><a id="more"></a></blockquote></li></ul>]]></content>
     
@@ -116,10 +116,10 @@
   
   <entry>
     <title>004_Shell_数组</title>
-    <link href="https://xiaoGoO.github.io.git/2017/01/01/004-Shell-%E6%95%B0%E7%BB%84/"/>
-    <id>https://xiaoGoO.github.io.git/2017/01/01/004-Shell-数组/</id>
+    <link href="https://xiaoGoO.github.io.git/2017/01/01/Shell/004-Shell-%E6%95%B0%E7%BB%84/"/>
+    <id>https://xiaoGoO.github.io.git/2017/01/01/Shell/004-Shell-数组/</id>
     <published>2017-01-01T14:31:24.000Z</published>
-    <updated>2018-03-13T14:32:08.144Z</updated>
+    <updated>2018-03-13T14:43:53.678Z</updated>
     
     <content type="html"><![CDATA[<h1 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h1><ul><li>序<blockquote><ul><li>只支持一维数组</li><li>下标由0开始的数组</li></ul></blockquote></li><li>数组的定义<ul><li>一般用<strong>括号</strong>“()” 来表示数组，每个元素用<strong>空格</strong>隔开   <figure class="highlight plain"><figcaption><span>shell</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"># 变量名称=(元素0 元素1 元素2 ... 元素n-1)</span><br><span class="line"># 定义数组变量的方法有三种</span><br><span class="line"># 类型一</span><br><span class="line">array=(&quot;小关1号&quot; &quot;小关2号&quot; &quot;小关3号&quot;)</span><br><span class="line">#类型二</span><br><span class="line">array2=(</span><br><span class="line">    &quot;小燕1号&quot;</span><br><span class="line">    &quot;小燕2号&quot;</span><br><span class="line">    &quot;小燕3号&quot;</span><br><span class="line">)</span><br><span class="line">#类型三</span><br><span class="line">array3[0]=&quot;xiaoG一号&quot;</span><br><span class="line">array3[1]=&quot;xiaoG二号&quot;</span><br><span class="line">array3[2]=&quot;xiaoG三号&quot;</span><br></pre></td></tr></table></figure></li></ul></li></ul><a id="more"></a><ul><li>读取数组<ul><li>读取数组的格式为 ${数组[下标]}  <figure class="highlight plain"><figcaption><span>shell</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">array=(&quot;小关1号&quot; &quot;小关2号&quot; &quot;小关3号&quot;)</span><br><span class="line"># 读取数组第一个值</span><br><span class="line">echo $&#123;array[0]&#125;</span><br><span class="line"># 读取数组所有元素</span><br><span class="line">echo $&#123;array[@]&#125;</span><br><span class="line"></span><br><span class="line"># 读取数组长度</span><br><span class="line">echo $&#123;#array[@]&#125;</span><br><span class="line">#或者</span><br><span class="line">echo $&#123;#array[*]&#125;</span><br><span class="line"></span><br><span class="line">#获取数组第n个元素的长度 </span><br><span class="line">echo $&#123;#array[n]&#125;</span><br></pre></td></tr></table></figure></li></ul></li></ul>]]></content>
     
