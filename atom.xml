@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://xiaoGoO.github.io.git/"/>
-  <updated>2018-02-22T07:09:39.996Z</updated>
+  <updated>2018-03-13T14:07:29.530Z</updated>
   <id>https://xiaoGoO.github.io.git/</id>
   
   <author>
@@ -17,23 +17,29 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Hello World</title>
-    <link href="https://xiaoGoO.github.io.git/2018/02/22/hello-world/"/>
-    <id>https://xiaoGoO.github.io.git/2018/02/22/hello-world/</id>
-    <published>2018-02-22T07:09:39.996Z</published>
-    <updated>2018-02-22T07:09:39.996Z</updated>
+    <title>001_Shell_环境</title>
+    <link href="https://xiaoGoO.github.io.git/2018/03/13/001-Shell-%E7%8E%AF%E5%A2%83/"/>
+    <id>https://xiaoGoO.github.io.git/2018/03/13/001-Shell-环境/</id>
+    <published>2018-03-13T13:02:25.000Z</published>
+    <updated>2018-03-13T14:07:29.530Z</updated>
     
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+    <content type="html"><![CDATA[<h1 id="序"><a href="#序" class="headerlink" title="序"></a>序</h1><h2 id="Shell"><a href="#Shell" class="headerlink" title="Shell"></a>Shell</h2><blockquote><p>Shell是一款使用<strong>C语言</strong>编写的程序，是用户使用Linux的桥梁。Shell是一种命令语言，又是一种程序设计语言。</p></blockquote><h2 id="Shell-Script-（Shell脚本）"><a href="#Shell-Script-（Shell脚本）" class="headerlink" title="Shell Script （Shell脚本）"></a>Shell Script （Shell脚本）</h2><blockquote><p>Shell Script 是一种由Shell编写的脚本程序。人们经常说的Shell通常指的是Shell Script ,但是你们要清楚Shell与Shell Script 是两种不同的概念。由于简洁起见，本文说的Shell编程指的是Shell Script 。</p></blockquote><a id="more"></a><h2 id="Shell-环境"><a href="#Shell-环境" class="headerlink" title="Shell 环境"></a>Shell 环境</h2><ul><li>Bourne Shell (/usr/bin/sh或者/bin/sh)</li><li>Bourne Again Shell (/bin/bash)</li><li>C Shell (/usr/bin/csh)</li><li>K Shell (/usr/bin/ksh)</li><li><p>Shell for Root (/sbin/sh) </p><blockquote><p>现在很多Linux系统默认集成的是<strong>Bourne Again Shell</strong>,而且简单，免费。 在日常工作中被广泛使用。同时，Bash也是大多数Linux系统默认的Shell。</p></blockquote></li></ul><h2 id="工具"><a href="#工具" class="headerlink" title="工具"></a>工具</h2><ul><li>1、使用文本编辑工具，如果是Linux 系统一般回使用<strong>vim</strong>来编辑（但是本人并不熟悉）,所以接下来我会使用Visual Studio Code 来编辑。</li></ul><h2 id="Hello-Shell"><a href="#Hello-Shell" class="headerlink" title="Hello Shell"></a>Hello Shell</h2><ul><li><p>创建 hello_Shell.sh 文件</p>  <figure class="highlight plain"><figcaption><span>Shell</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># 执行命令 创建shell文件</span><br><span class="line">vim hello_Shell.sh</span><br><span class="line"></span><br><span class="line">#  hello_Shell.sh 内容</span><br><span class="line">#!/bin/bash</span><br><span class="line">echo &quot;Hello Shell !&quot;</span><br></pre></td></tr></table></figure></li><li><p>执行脚本 </p>  <figure class="highlight plain"><figcaption><span>shell</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"># 方法1</span><br><span class="line">sh hello_shell.sh</span><br><span class="line">#方法2</span><br><span class="line">## 先赋予执行权限</span><br><span class="line">chmod +x hello_shell.sh</span><br><span class="line">## 执行脚本</span><br><span class="line">./hello_shell.sh</span><br></pre></td></tr></table></figure></li></ul>]]></content>
     
     <summary type="html">
     
-      
-      
-        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
-      
+      &lt;h1 id=&quot;序&quot;&gt;&lt;a href=&quot;#序&quot; class=&quot;headerlink&quot; title=&quot;序&quot;&gt;&lt;/a&gt;序&lt;/h1&gt;&lt;h2 id=&quot;Shell&quot;&gt;&lt;a href=&quot;#Shell&quot; class=&quot;headerlink&quot; title=&quot;Shell&quot;&gt;&lt;/a&gt;Shell&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;Shell是一款使用&lt;strong&gt;C语言&lt;/strong&gt;编写的程序，是用户使用Linux的桥梁。Shell是一种命令语言，又是一种程序设计语言。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;Shell-Script-（Shell脚本）&quot;&gt;&lt;a href=&quot;#Shell-Script-（Shell脚本）&quot; class=&quot;headerlink&quot; title=&quot;Shell Script （Shell脚本）&quot;&gt;&lt;/a&gt;Shell Script （Shell脚本）&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;Shell Script 是一种由Shell编写的脚本程序。人们经常说的Shell通常指的是Shell Script ,但是你们要清楚Shell与Shell Script 是两种不同的概念。由于简洁起见，本文说的Shell编程指的是Shell Script 。&lt;/p&gt;
+&lt;/blockquote&gt;
     
     </summary>
     
+      <category term="脚本" scheme="https://xiaoGoO.github.io.git/categories/%E8%84%9A%E6%9C%AC/"/>
+    
+    
+      <category term="Shell" scheme="https://xiaoGoO.github.io.git/tags/Shell/"/>
     
   </entry>
   
