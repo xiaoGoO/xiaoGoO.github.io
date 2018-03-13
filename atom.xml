@@ -2,11 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>小关博客</title>
   
-  <subtitle>我是副标题</subtitle>
+  <subtitle>专注移动端开发</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://xiaoGoO.github.io.git/"/>
-  <updated>2018-03-13T14:48:03.993Z</updated>
+  <updated>2018-03-13T15:09:47.250Z</updated>
   <id>https://xiaoGoO.github.io.git/</id>
   
   <author>
@@ -17,30 +17,51 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>node.js版本管理</title>
-    <link href="https://xiaoGoO.github.io.git/2018/03/13/node-js%E7%89%88%E6%9C%AC%E7%AE%A1%E7%90%86/"/>
-    <id>https://xiaoGoO.github.io.git/2018/03/13/node-js版本管理/</id>
-    <published>2018-03-13T14:46:53.000Z</published>
-    <updated>2018-03-13T14:48:03.993Z</updated>
+    <title>架构模式之MVX</title>
+    <link href="https://xiaoGoO.github.io.git/2018/02/25/Structure/%E6%9E%B6%E6%9E%84%E6%A8%A1%E5%BC%8F%E4%B9%8BMVX/"/>
+    <id>https://xiaoGoO.github.io.git/2018/02/25/Structure/架构模式之MVX/</id>
+    <published>2018-02-25T15:08:22.000Z</published>
+    <updated>2018-03-13T15:09:47.250Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="使用nvm，管理node版本"><a href="#使用nvm，管理node版本" class="headerlink" title="使用nvm，管理node版本"></a>使用nvm，管理node版本</h1><blockquote><p>因为是开源软件，所以具备大多数开源软件都存在的“版本问题”，版本发展很快，版本前后差异性大，老系统用新版本node跑不过，全局安装的第三方组件和node版本相关造成全局版本混乱</p></blockquote><h2 id="1-nvm主要特点"><a href="#1-nvm主要特点" class="headerlink" title="1. nvm主要特点"></a>1. nvm主要特点</h2><ul><li><ol><li>可安装多版本的node。</li></ol></li><li><ol><li>灵活切换当前的node版本。</li></ol></li><li><ol><li>以沙箱方式全局安装第三方组件到对应版本的node中。</li></ol></li><li><ol><li>通过.vnmrc文件，方便灵活地指定各应用系统所需的node版本进行运行</li></ol></li><li><ol><li>可惜目前只支持linux，OS系统。<h2 id="2-nvm安装"><a href="#2-nvm安装" class="headerlink" title="2. nvm安装"></a>2. nvm安装</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">//使用 brew 安装 nvm</span><br><span class="line">brew install nvm</span><br><span class="line">//其次需要在shell的配置文件~/.bash_profile (如果没有.bash_profile文件需要自行touch .bash_profile)中添加如下内容：</span><br><span class="line"># For NVM</span><br><span class="line">export NVM_DIR=~/.nvm</span><br><span class="line">source $(brew --prefix nvm)/nvm.sh</span><br><span class="line">//然后重新source</span><br><span class="line">source .bash_profile</span><br></pre></td></tr></table></figure></li></ol></li></ul><h2 id="3-使用nvm安装node"><a href="#3-使用nvm安装node" class="headerlink" title="3. 使用nvm安装node"></a>3. 使用nvm安装node</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">//安装当前最新的稳定版。</span><br><span class="line">nvm install stable</span><br><span class="line">//安装指定版本</span><br><span class="line">nvm install 9.4.0</span><br><span class="line">//查看当前版本</span><br><span class="line">nvm current</span><br><span class="line">//切换node版本 </span><br><span class="line">nvm use 9</span><br><span class="line">//显示所有安装的版本</span><br><span class="line">nvm ls</span><br></pre></td></tr></table></figure>]]></content>
+    <content type="html"><![CDATA[<h1 id="MVX-gt-MVC-MVP-MVVM"><a href="#MVX-gt-MVC-MVP-MVVM" class="headerlink" title="MVX = &gt; MVC/MVP/MVVM"></a>MVX = &gt; MVC/MVP/MVVM</h1><blockquote><p>本文讲会介绍MVC,MVP,MVVM的区别和使用</p></blockquote><h2 id="MVC"><a href="#MVC" class="headerlink" title="MVC"></a>MVC</h2><blockquote><p>MVC模式最早是由<a href="https://zh.wikipedia.org/w/index.php?title=Trygve_Reenskaug&amp;action=edit&amp;redlink=1" target="_blank" rel="noopener">Trygve Reenskaug</a>在1978年提出的，是 <a href="https://zh.wikipedia.org/wiki/帕羅奧多研究中心" target="_blank" rel="noopener">帕罗奥多研究中心</a>（Xerox PARC）在20世纪80年代为程序语言<a href="https://zh.wikipedia.org/wiki/Smalltalk" target="_blank" rel="noopener">Smalltalk</a> 发明的一种软件架构。<strong>MVC模式</strong>的目的是实现一种动态的程序设计，使后续对程序的修改和扩展简化，并且使程序某一部分的重复利用成为可能。除此之外，此模式通过对复杂度的简化，使程序结构更加直观</p></blockquote><a id="more"></a><h2 id="MVC模式"><a href="#MVC模式" class="headerlink" title="MVC模式"></a>MVC模式</h2><blockquote><p>对于mvc模式很多程序员都清楚，但大部分的程序员都不知道的是MVC的概念其实不止一种，就算现在流行的mvvm,mvp也是由mvc变种而来。</p></blockquote><h3 id="早期MVC"><a href="#早期MVC" class="headerlink" title="早期MVC"></a>早期MVC</h3><ol><li>早期的mvc模式可以简单的理解为：<ol><li>Model：根据用户的心理模型构建数据和数据的逻辑</li><li>View：负责呈现，将数据展现给用户</li><li>Controller：负责处理用户的指令，并且反馈给 Model和View</li></ol></li><li>流程图：<br><img src="http://oiu3bjtd5.bkt.clouddn.com/20180227151971283129871.jpg" alt="早期mvc模型"></li></ol><h3 id="标准MVC"><a href="#标准MVC" class="headerlink" title="标准MVC"></a>标准MVC</h3><blockquote><p>怎么才算是标准的MVC，我现在还得不出结论。但是目前得到的资料都统一认同的一点就是。MVC分为 View、Controller、Model 三部分，而且这些组成的职责叙述也相同。</p><ol><li>标准MVC的理解：<ol><li>Model: 管理应用的行为和数据，响应数据请求（经常来自视图）和更新状态的指令（经常来自控制器）</li><li>View: 管理作为位图展示到屏幕上的图形和文字输出；</li><li>翻译用户的输入并依照用户的输入操作模型和视图；</li></ol></li><li>流程图：<br><img src="http://oiu3bjtd5.bkt.clouddn.com/20180305152023347150651.png" alt="标准MVC模型"></li></ol></blockquote><h3 id="IOS下的MVC模式"><a href="#IOS下的MVC模式" class="headerlink" title="IOS下的MVC模式"></a>IOS下的MVC模式</h3><blockquote><p>iOS 的 Cocoa Touch 框架一直采用MVC的设计模式，又因为IOS的页面是基于UIViewController 显示的，每个UIViewController下绑定一个根View。这使得控制层和UI层紧密的耦合在一起，这也是致使UIViewController一直很臃肿的原因之一</p></blockquote><p><img src="http://oiu3bjtd5.bkt.clouddn.com/20180227151971297715987.jpg" alt="IOSMVC模型"></p><h3 id="MVC核心"><a href="#MVC核心" class="headerlink" title="MVC核心"></a>MVC核心</h3><ul><li>MVC最重要的是将原本杂乱的代码层级化，将原本杂乱的代码分为 展示层（View,Controller）和领域层(Model),在这时，领域层中的领域对象由于其自身特点不需要对展示层有任何了解，可以同时为不同的展示层工作。</li></ul><h2 id="MVP模式"><a href="#MVP模式" class="headerlink" title="MVP模式"></a>MVP模式</h2><blockquote><p>根据维基百科中描述的<strong>MVP</strong>模式其实也是<strong>MVC</strong>的一个变种，其实MVP与MVC也是比较相像，其中最大的区别就是MVP使用Presenter对View和Model进行了解耦合。View与Model不直接通讯都是必须经过Presenter作为桥梁</p></blockquote><ol><li><strong>mvp</strong>理解：<ol><li><strong>Presenter</strong>: 包含UI的处理逻辑 负责与View和model通讯</li><li><strong>Model</strong>: 数据和数据的处理逻辑，只能与<strong>Persenter</strong>通讯</li><li><strong>View</strong>：负责呈现只能与<strong>Persenter</strong>通讯</li></ol></li><li>图解：<br> <img src="http://oiu3bjtd5.bkt.clouddn.com/20180305152023655548165.png" alt="mvp流程图"></li><li>特点：<ol><li>降低View与Model的耦合，使代码更灵活。</li><li>但是同时的增加了Presenter 的压力使的为之厚重了许多。</li></ol></li></ol><h3 id="MVP变种：被动视图（Passive-View）"><a href="#MVP变种：被动视图（Passive-View）" class="headerlink" title="MVP变种：被动视图（Passive View）"></a>MVP变种：被动视图（Passive View）</h3><p>被动视图顾名思义就是视图层完全处于被动，即：改模式下View自身不具备改变自身的任何方法，只负责展示视图的结构和内容，本身不具有任何的逻辑。所有的变化都是由Presenter改变。</p><ol><li>图解<br><img src="http://oiu3bjtd5.bkt.clouddn.com/20180227151971441949169.jpg" alt="passive view"></li><li>特点：<ol><li>视图层完全处于被动，就是说视图成与Model层完全隔离，使得Model层与View层更加灵活，可以自由组合</li><li>相当于 MVP的进化版，冲而加重Presenter 的逻辑复杂性。</li></ol></li></ol><h2 id="MVVM"><a href="#MVVM" class="headerlink" title="MVVM"></a>MVVM</h2><blockquote><p>MVVM是马丁·福勒的PM（Presentation Model）设计模式的变体。 MVVM以相同的方式抽象出视图的状态和行为， 但PM以不依赖于特定用户界面平台的方式抽象出视图（创建了视图模型）。<br>MVVM和PM都来自MVC模式。</p></blockquote><h3 id="MVVM组成"><a href="#MVVM组成" class="headerlink" title="MVVM组成"></a>MVVM组成</h3><ul><li>View <ul><li>展现UI</li></ul></li><li>Model<ul><li>数据模型 </li></ul></li><li>ViewModel <ul><li>视图模型负责绑定控制视图，使之Model与View关联，同时降低耦合<h3 id="关系网"><a href="#关系网" class="headerlink" title="关系网"></a>关系网</h3>MVVM 与MVP 很相像，唯一不同的就是 ViewModel 与 View 之间是采用双向绑定。其中一方有变动都会反映给对方。<br><img src="http://oiu3bjtd5.bkt.clouddn.com/20180305152023647526022.png" alt=""></li></ul></li></ul><h3 id="MVVM前身PM（Presentation-Model-）"><a href="#MVVM前身PM（Presentation-Model-）" class="headerlink" title="MVVM前身PM（Presentation Model ）"></a>MVVM前身PM（Presentation Model ）</h3><p>PM 模式将视图中的全部状态和行为放到一个单独的展示模型中，协调领域对象（模型）并且为视图层提供一个接口。<br>在监督控制器中，视图层与模型层中的一些简单属性进行绑定，在模型属性变化时直接更新视图，而 PM 通过引入展示模型将<strong>模型层中的数据与复杂的业务逻辑封装成属性与简单的数据同时暴露给视图，让视图和展示模型中的属性进行同步</strong>。<br><img src="http://oiu3bjtd5.bkt.clouddn.com/20180305152023634480016.png" alt=""></p><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>无论哪种设计模式都有各自的优点，选择上还是根据自身的平台和项目的需求选择哪种设计模式。只要注意代码的臃肿和各模块之间的耦合性，写出整洁易懂的代码即可。</p><h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a href="https://draveness.me/mvx" target="_blank" rel="noopener">https://draveness.me/mvx</a></p><blockquote><p>该文章是学习MVVM过程中顺便记录下的，本人表述能力比较低，有错误之处请指出谢谢。</p></blockquote>]]></content>
     
     <summary type="html">
     
-      
-      
-        &lt;h1 id=&quot;使用nvm，管理node版本&quot;&gt;&lt;a href=&quot;#使用nvm，管理node版本&quot; class=&quot;headerlink&quot; title=&quot;使用nvm，管理node版本&quot;&gt;&lt;/a&gt;使用nvm，管理node版本&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;因为是开源软件，所
-      
+      &lt;h1 id=&quot;MVX-gt-MVC-MVP-MVVM&quot;&gt;&lt;a href=&quot;#MVX-gt-MVC-MVP-MVVM&quot; class=&quot;headerlink&quot; title=&quot;MVX = &amp;gt; MVC/MVP/MVVM&quot;&gt;&lt;/a&gt;MVX = &amp;gt; MVC/MVP/MVVM&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;本文讲会介绍MVC,MVP,MVVM的区别和使用&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;MVC&quot;&gt;&lt;a href=&quot;#MVC&quot; class=&quot;headerlink&quot; title=&quot;MVC&quot;&gt;&lt;/a&gt;MVC&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;MVC模式最早是由&lt;a href=&quot;https://zh.wikipedia.org/w/index.php?title=Trygve_Reenskaug&amp;amp;action=edit&amp;amp;redlink=1&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Trygve Reenskaug&lt;/a&gt;在1978年提出的，是 &lt;a href=&quot;https://zh.wikipedia.org/wiki/帕羅奧多研究中心&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;帕罗奥多研究中心&lt;/a&gt;（Xerox PARC）在20世纪80年代为程序语言&lt;a href=&quot;https://zh.wikipedia.org/wiki/Smalltalk&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Smalltalk&lt;/a&gt; 发明的一种软件架构。&lt;strong&gt;MVC模式&lt;/strong&gt;的目的是实现一种动态的程序设计，使后续对程序的修改和扩展简化，并且使程序某一部分的重复利用成为可能。除此之外，此模式通过对复杂度的简化，使程序结构更加直观&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>node.js版本管理</title>
+    <link href="https://xiaoGoO.github.io.git/2017/02/03/Node/node-js%E7%89%88%E6%9C%AC%E7%AE%A1%E7%90%86/"/>
+    <id>https://xiaoGoO.github.io.git/2017/02/03/Node/node-js版本管理/</id>
+    <published>2017-02-03T14:46:53.000Z</published>
+    <updated>2018-03-13T15:09:52.196Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="使用nvm，管理node版本"><a href="#使用nvm，管理node版本" class="headerlink" title="使用nvm，管理node版本"></a>使用nvm，管理node版本</h1><blockquote><p>因为是开源软件，所以具备大多数开源软件都存在的“版本问题”，版本发展很快，版本前后差异性大，老系统用新版本node跑不过，全局安装的第三方组件和node版本相关造成全局版本混乱</p></blockquote><a id="more"></a><h2 id="1-nvm主要特点"><a href="#1-nvm主要特点" class="headerlink" title="1. nvm主要特点"></a>1. nvm主要特点</h2><ul><li><ol><li>可安装多版本的node。</li></ol></li><li><ol><li>灵活切换当前的node版本。</li></ol></li><li><ol><li>以沙箱方式全局安装第三方组件到对应版本的node中。</li></ol></li><li><ol><li>通过.vnmrc文件，方便灵活地指定各应用系统所需的node版本进行运行</li></ol></li><li><ol><li>可惜目前只支持linux，OS系统。<h2 id="2-nvm安装"><a href="#2-nvm安装" class="headerlink" title="2. nvm安装"></a>2. nvm安装</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">//使用 brew 安装 nvm</span><br><span class="line">brew install nvm</span><br><span class="line">//其次需要在shell的配置文件~/.bash_profile (如果没有.bash_profile文件需要自行touch .bash_profile)中添加如下内容：</span><br><span class="line"># For NVM</span><br><span class="line">export NVM_DIR=~/.nvm</span><br><span class="line">source $(brew --prefix nvm)/nvm.sh</span><br><span class="line">//然后重新source</span><br><span class="line">source .bash_profile</span><br></pre></td></tr></table></figure></li></ol></li></ul><h2 id="3-使用nvm安装node"><a href="#3-使用nvm安装node" class="headerlink" title="3. 使用nvm安装node"></a>3. 使用nvm安装node</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">//安装当前最新的稳定版。</span><br><span class="line">nvm install stable</span><br><span class="line">//安装指定版本</span><br><span class="line">nvm install 9.4.0</span><br><span class="line">//查看当前版本</span><br><span class="line">nvm current</span><br><span class="line">//切换node版本 </span><br><span class="line">nvm use 9</span><br><span class="line">//显示所有安装的版本</span><br><span class="line">nvm ls</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;使用nvm，管理node版本&quot;&gt;&lt;a href=&quot;#使用nvm，管理node版本&quot; class=&quot;headerlink&quot; title=&quot;使用nvm，管理node版本&quot;&gt;&lt;/a&gt;使用nvm，管理node版本&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;因为是开源软件，所以具备大多数开源软件都存在的“版本问题”，版本发展很快，版本前后差异性大，老系统用新版本node跑不过，全局安装的第三方组件和node版本相关造成全局版本混乱&lt;/p&gt;
+&lt;/blockquote&gt;
     
     </summary>
     
       <category term="Node" scheme="https://xiaoGoO.github.io.git/categories/Node/"/>
     
     
-      <category term="脚本" scheme="https://xiaoGoO.github.io.git/tags/%E8%84%9A%E6%9C%AC/"/>
+      <category term="前端" scheme="https://xiaoGoO.github.io.git/tags/%E5%89%8D%E7%AB%AF/"/>
     
-      <category term="学习" scheme="https://xiaoGoO.github.io.git/tags/%E5%AD%A6%E4%B9%A0/"/>
+      <category term="H5" scheme="https://xiaoGoO.github.io.git/tags/H5/"/>
     
   </entry>
   
