@@ -4,23 +4,152 @@
 
     
   <url>
-    <loc>https://xiaoGoO.github.io.git/2018/03/13/001-Shell-%E7%8E%AF%E5%A2%83/</loc>
-    <lastmod>2018-03-13T14:07:29.530Z</lastmod>
+    <loc>https://xiaoGoO.github.io.git/2017/01/01/007-Shell-%E8%BF%90%E7%AE%97%E7%AC%A6/</loc>
+    <lastmod>2018-03-13T14:37:00.208Z</lastmod>
     <data>
         <display>
-        <title>001_Shell_环境</title>
-        <pubTime>2018-03-13T13:02:25.000Z</pubTime>
+        <title>007_Shell_运算符</title>
+        <pubTime>2017-01-01T14:35:15.000Z</pubTime>
         
-        <tag>Shell</tag>
+        <tag>脚本</tag>
+         
+        <tag>学习</tag>
          
          
            
              
-              <breadCrumb title="脚本" url="https://xiaoGoO.github.io.git/categories/%E8%84%9A%E6%9C%AC/"/>
+              <breadCrumb title="Shell" url="https://xiaoGoO.github.io.git/categories/Shell/"/>
           
         </display>
     </data>
     </url>
 
+    
+  <url>
+    <loc>https://xiaoGoO.github.io.git/2017/01/01/Shell/002_Shell_%E5%8F%98%E9%87%8F/</loc>
+    <lastmod>2018-03-13T14:36:45.455Z</lastmod>
+    <data>
+        <display>
+        <title>002_Shell_变量</title>
+        <pubTime>2017-01-01T13:02:30.000Z</pubTime>
+        
+        <tag>脚本</tag>
+         
+        <tag>学习</tag>
+         
+         
+           
+             
+              <breadCrumb title="Shell" url="https://xiaoGoO.github.io.git/categories/Shell/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://xiaoGoO.github.io.git/2017/01/01/006-Shell-%E4%BC%A0%E5%8F%82/</loc>
+    <lastmod>2018-03-13T14:34:58.457Z</lastmod>
+    <data>
+        <display>
+        <title>006_Shell_传参</title>
+        <pubTime>2017-01-01T14:33:47.000Z</pubTime>
+        
+        <tag>脚本</tag>
+         
+        <tag>学习</tag>
+         
+         
+           
+             
+              <breadCrumb title="Shell" url="https://xiaoGoO.github.io.git/categories/Shell/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://xiaoGoO.github.io.git/2018/03/13/005-Shell-%E6%B3%A8%E9%87%8A/</loc>
+    <lastmod>2018-03-13T14:32:29.522Z</lastmod>
+    <data>
+        <display>
+        <title>005_Shell_注释</title>
+        <pubTime>2018-03-13T14:32:29.000Z</pubTime>
+        
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://xiaoGoO.github.io.git/2017/01/01/004-Shell-%E6%95%B0%E7%BB%84/</loc>
+    <lastmod>2018-03-13T14:32:08.144Z</lastmod>
+    <data>
+        <display>
+        <title>004_Shell_数组</title>
+        <pubTime>2017-01-01T14:31:24.000Z</pubTime>
+        
+        <tag>脚本</tag>
+         
+        <tag>学习</tag>
+         
+         
+           
+             
+              <breadCrumb title="Shell" url="https://xiaoGoO.github.io.git/categories/Shell/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://xiaoGoO.github.io.git/2017/01/01/Shell/003-Shell-%E5%AD%97%E7%AC%A6%E4%B8%B2/</loc>
+    <lastmod>2018-03-13T14:31:09.000Z</lastmod>
+    <data>
+        <display>
+        <title>003_Shell_字符串</title>
+        <pubTime>2017-01-01T14:29:45.000Z</pubTime>
+        
+        <tag>脚本</tag>
+         
+        <tag>学习</tag>
+         
+         
+           
+             
+              <breadCrumb title="Shell" url="https://xiaoGoO.github.io.git/categories/Shell/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://xiaoGoO.github.io.git/2017/01/01/Shell/001_Shell_%E7%8E%AF%E5%A2%83/</loc>
+    <lastmod>2018-03-13T14:28:00.533Z</lastmod>
+    <data>
+        <display>
+        <title>001_Shell_环境</title>
+        <pubTime>2017-01-01T13:02:25.000Z</pubTime>
+        
+        <tag>脚本</tag>
+         
+        <tag>学习</tag>
+         
+         
+           
+             
+              <breadCrumb title="Shell" url="https://xiaoGoO.github.io.git/categories/Shell/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+    
     
 </urlset>

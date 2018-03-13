@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://xiaoGoO.github.io.git/"/>
-  <updated>2018-03-13T14:07:29.530Z</updated>
+  <updated>2018-03-13T14:32:29.522Z</updated>
   <id>https://xiaoGoO.github.io.git/</id>
   
   <author>
@@ -17,11 +17,208 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>005_Shell_注释</title>
+    <link href="https://xiaoGoO.github.io.git/2018/03/13/005-Shell-%E6%B3%A8%E9%87%8A/"/>
+    <id>https://xiaoGoO.github.io.git/2018/03/13/005-Shell-注释/</id>
+    <published>2018-03-13T14:32:29.000Z</published>
+    <updated>2018-03-13T14:32:29.522Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>007_Shell_运算符</title>
+    <link href="https://xiaoGoO.github.io.git/2017/01/01/007-Shell-%E8%BF%90%E7%AE%97%E7%AC%A6/"/>
+    <id>https://xiaoGoO.github.io.git/2017/01/01/007-Shell-运算符/</id>
+    <published>2017-01-01T14:35:15.000Z</published>
+    <updated>2018-03-13T14:37:00.208Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a>运算符</h1><ul><li>序<blockquote><ul><li>shell 支持多种运算符例如：<ul><li>算术运算符</li><li>关系运算符</li><li>布尔运算符</li><li>字符串运算符</li><li>文件测试运算符</li></ul></li><li>原生的bash不支持算数运算符，需要借助其他命令来完成，例如：<ul><li>awk</li><li>expr(比较常用)<a id="more"></a></li></ul></li></ul></blockquote><h2 id="expr"><a href="#expr" class="headerlink" title="expr"></a>expr</h2></li><li><p>格式</p>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">值=`expr 值1 运算符 值2`</span><br></pre></td></tr></table></figure><blockquote><ul><li>注意:<ul><li>表达式和运算符之间要有空格，例如 2+2 是不对的，必须写成 2 + 2，这与我们熟悉的大多数编程语言不一样。</li><li>完整的表达式要被 <code></code> 包含，注意这个字符不是常用的单引号，在 Esc 键下边。</li></ul></li></ul></blockquote></li><li><p>所有运算符</p><p>  运算符 | 说明    | 例子<br>  —   | —     | —</p><ul><li>| 加      | <code>expr 1 + 1</code> =&gt; 2</li></ul><ul><li>| 减      | <code>expr 2 - 1</code> =&gt; 1</li></ul><ul><li>| 乘      | <code>expr 2 \* 2</code> =&gt; 4<br>/     | 除      | <code>expr 2 / 2</code> =&gt; 1<br>%     | 除余     | <code>expr 2 % 2</code> =&gt; 0<br>=     | 赋值符   | a=$b 就是将变量<strong>b</strong>的值赋予给变量<strong>a</strong><br>==    | 判断符，等于 | [ $a == $b ] 判断变量<strong>a</strong>是否等于变量<strong>b</strong>,如果相等返回<strong>true</strong>，否则<strong>false</strong><br>!=    | 判断符，不等于 | [ $a != $b ] 与 <strong>==</strong> 相反</li></ul></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;运算符&quot;&gt;&lt;a href=&quot;#运算符&quot; class=&quot;headerlink&quot; title=&quot;运算符&quot;&gt;&lt;/a&gt;运算符&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;序&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;shell 支持多种运算符例如：&lt;ul&gt;
+&lt;li&gt;算术运算符&lt;/li&gt;
+&lt;li&gt;关系运算符&lt;/li&gt;
+&lt;li&gt;布尔运算符&lt;/li&gt;
+&lt;li&gt;字符串运算符&lt;/li&gt;
+&lt;li&gt;文件测试运算符&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;原生的bash不支持算数运算符，需要借助其他命令来完成，例如：&lt;ul&gt;
+&lt;li&gt;awk&lt;/li&gt;
+&lt;li&gt;expr(比较常用)
+    
+    </summary>
+    
+      <category term="Shell" scheme="https://xiaoGoO.github.io.git/categories/Shell/"/>
+    
+    
+      <category term="脚本" scheme="https://xiaoGoO.github.io.git/tags/%E8%84%9A%E6%9C%AC/"/>
+    
+      <category term="学习" scheme="https://xiaoGoO.github.io.git/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>006_Shell_传参</title>
+    <link href="https://xiaoGoO.github.io.git/2017/01/01/006-Shell-%E4%BC%A0%E5%8F%82/"/>
+    <id>https://xiaoGoO.github.io.git/2017/01/01/006-Shell-传参/</id>
+    <published>2017-01-01T14:33:47.000Z</published>
+    <updated>2018-03-13T14:34:58.457Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="传参"><a href="#传参" class="headerlink" title="传参"></a>传参</h1><ul><li>序<blockquote><p>我们在开发脚本过程中，少不了会给执行的脚步传递参数 ，就好比我写一个文件复制的脚步，我需要动态传递我需要复制的文件路径和复制后存放的路径，要不然没用一次就改一次代码就太不人性化了。</p></blockquote></li><li>实例<ul><li>比我写了个脚本名为：006_shell_params.sh  <figure class="highlight plain"><figcaption><span>shell</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">#获取参数</span><br><span class="line">echo &quot;获取执行脚本名称：$0&quot;</span><br><span class="line">echo &quot;获取第一个参数：$1&quot;</span><br><span class="line">echo &quot;获取第二个参数：$2&quot;</span><br><span class="line">echo &quot;参数个数：$#&quot;</span><br><span class="line">echo &quot;全部参数：$*&quot;</span><br></pre></td></tr></table></figure></li></ul></li></ul><a id="more"></a><pre><code>- 执行结果    ![参数结果](http://oiu3bjtd5.bkt.clouddn.com/20180305152021858543372.jpg)</code></pre><ul><li><p>参数处理表</p><p>   处理 | 说明<br>   — | —<br>   $#  | 参数个数<br>   $<em>  | 以字符串的方式输出所有参数 , “$</em>“ -&gt; “param0 param1 param2”<br>   $@  | 与$<em>相同，但是用 **</em>“*** 号括起来，是以数组形式输出 “$@” -&gt; “param0” “param1” “param2”<br>   $!  | 运行最后一个进程的ID<br>   $-  | 显示Shell的当前选项<br>   $?  | 显示最后命令的退出状态。0表示没有错误，其他任何值表明有错误。</p></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;传参&quot;&gt;&lt;a href=&quot;#传参&quot; class=&quot;headerlink&quot; title=&quot;传参&quot;&gt;&lt;/a&gt;传参&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;序&lt;blockquote&gt;
+&lt;p&gt;我们在开发脚本过程中，少不了会给执行的脚步传递参数 ，就好比我写一个文件复制的脚步，我需要动态传递我需要复制的文件路径和复制后存放的路径，要不然没用一次就改一次代码就太不人性化了。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;实例&lt;ul&gt;
+&lt;li&gt;比我写了个脚本名为：006_shell_params.sh  &lt;figure class=&quot;highlight plain&quot;&gt;&lt;figcaption&gt;&lt;span&gt;shell&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;#获取参数&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;echo &amp;quot;获取执行脚本名称：$0&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;echo &amp;quot;获取第一个参数：$1&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;echo &amp;quot;获取第二个参数：$2&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;echo &amp;quot;参数个数：$#&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;echo &amp;quot;全部参数：$*&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+      <category term="Shell" scheme="https://xiaoGoO.github.io.git/categories/Shell/"/>
+    
+    
+      <category term="脚本" scheme="https://xiaoGoO.github.io.git/tags/%E8%84%9A%E6%9C%AC/"/>
+    
+      <category term="学习" scheme="https://xiaoGoO.github.io.git/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>004_Shell_数组</title>
+    <link href="https://xiaoGoO.github.io.git/2017/01/01/004-Shell-%E6%95%B0%E7%BB%84/"/>
+    <id>https://xiaoGoO.github.io.git/2017/01/01/004-Shell-数组/</id>
+    <published>2017-01-01T14:31:24.000Z</published>
+    <updated>2018-03-13T14:32:08.144Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h1><ul><li>序<blockquote><ul><li>只支持一维数组</li><li>下标由0开始的数组</li></ul></blockquote></li><li>数组的定义<ul><li>一般用<strong>括号</strong>“()” 来表示数组，每个元素用<strong>空格</strong>隔开   <figure class="highlight plain"><figcaption><span>shell</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"># 变量名称=(元素0 元素1 元素2 ... 元素n-1)</span><br><span class="line"># 定义数组变量的方法有三种</span><br><span class="line"># 类型一</span><br><span class="line">array=(&quot;小关1号&quot; &quot;小关2号&quot; &quot;小关3号&quot;)</span><br><span class="line">#类型二</span><br><span class="line">array2=(</span><br><span class="line">    &quot;小燕1号&quot;</span><br><span class="line">    &quot;小燕2号&quot;</span><br><span class="line">    &quot;小燕3号&quot;</span><br><span class="line">)</span><br><span class="line">#类型三</span><br><span class="line">array3[0]=&quot;xiaoG一号&quot;</span><br><span class="line">array3[1]=&quot;xiaoG二号&quot;</span><br><span class="line">array3[2]=&quot;xiaoG三号&quot;</span><br></pre></td></tr></table></figure></li></ul></li></ul><a id="more"></a><ul><li>读取数组<ul><li>读取数组的格式为 ${数组[下标]}  <figure class="highlight plain"><figcaption><span>shell</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">array=(&quot;小关1号&quot; &quot;小关2号&quot; &quot;小关3号&quot;)</span><br><span class="line"># 读取数组第一个值</span><br><span class="line">echo $&#123;array[0]&#125;</span><br><span class="line"># 读取数组所有元素</span><br><span class="line">echo $&#123;array[@]&#125;</span><br><span class="line"></span><br><span class="line"># 读取数组长度</span><br><span class="line">echo $&#123;#array[@]&#125;</span><br><span class="line">#或者</span><br><span class="line">echo $&#123;#array[*]&#125;</span><br><span class="line"></span><br><span class="line">#获取数组第n个元素的长度 </span><br><span class="line">echo $&#123;#array[n]&#125;</span><br></pre></td></tr></table></figure></li></ul></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;数组&quot;&gt;&lt;a href=&quot;#数组&quot; class=&quot;headerlink&quot; title=&quot;数组&quot;&gt;&lt;/a&gt;数组&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;序&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;只支持一维数组&lt;/li&gt;
+&lt;li&gt;下标由0开始的数组&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;数组的定义&lt;ul&gt;
+&lt;li&gt;一般用&lt;strong&gt;括号&lt;/strong&gt;“()” 来表示数组，每个元素用&lt;strong&gt;空格&lt;/strong&gt;隔开   &lt;figure class=&quot;highlight plain&quot;&gt;&lt;figcaption&gt;&lt;span&gt;shell&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;# 变量名称=(元素0 元素1 元素2 ... 元素n-1)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;# 定义数组变量的方法有三种&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;# 类型一&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;array=(&amp;quot;小关1号&amp;quot; &amp;quot;小关2号&amp;quot; &amp;quot;小关3号&amp;quot;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;#类型二&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;array2=(&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;quot;小燕1号&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;quot;小燕2号&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;quot;小燕3号&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;#类型三&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;array3[0]=&amp;quot;xiaoG一号&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;array3[1]=&amp;quot;xiaoG二号&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;array3[2]=&amp;quot;xiaoG三号&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+      <category term="Shell" scheme="https://xiaoGoO.github.io.git/categories/Shell/"/>
+    
+    
+      <category term="脚本" scheme="https://xiaoGoO.github.io.git/tags/%E8%84%9A%E6%9C%AC/"/>
+    
+      <category term="学习" scheme="https://xiaoGoO.github.io.git/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>003_Shell_字符串</title>
+    <link href="https://xiaoGoO.github.io.git/2017/01/01/Shell/003-Shell-%E5%AD%97%E7%AC%A6%E4%B8%B2/"/>
+    <id>https://xiaoGoO.github.io.git/2017/01/01/Shell/003-Shell-字符串/</id>
+    <published>2017-01-01T14:29:45.000Z</published>
+    <updated>2018-03-13T14:31:09.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Shell-字符串"><a href="#Shell-字符串" class="headerlink" title="Shell 字符串"></a>Shell 字符串</h2><ul><li>序<blockquote><p>shell的数据类型就只有<strong>数字</strong>和<strong>字符串</strong></p></blockquote></li><li><p>单引号</p><ul><li>作用<ul><li>单引号里的内容回被原样输出，转义符、变量的作用将会失效。</li></ul></li><li><p>例子</p><ul><li><p>代码</p>  <figure class="highlight plain"><figcaption><span>shell</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">name=&apos;小关&apos;;</span><br><span class="line">echo &apos;我的名字叫$name&apos;</span><br></pre></td></tr></table></figure></li><li><p>运行效果如下</p><p>   <img src="http://oiu3bjtd5.bkt.clouddn.com/20180305152021837664294.jpg" alt="单引号"></p><a id="more"></a></li></ul></li></ul></li><li><p>双引号</p><ul><li>作用<ul><li>双引号里的转义符，变量会生效</li></ul></li><li><p>例子</p><ul><li><p>代码</p>  <figure class="highlight plain"><figcaption><span>shell</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">name=&apos;小关&apos;;</span><br><span class="line">echo &quot;我的名字叫$name&quot;</span><br></pre></td></tr></table></figure></li><li><p>运行结果如下</p><p>  <img src="http://oiu3bjtd5.bkt.clouddn.com/20180305152021839273926.jpg" alt="双引号"></p></li></ul></li></ul></li><li><p>拼接</p><ul><li><p>例子</p>  <figure class="highlight plain"><figcaption><span>shell</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">xiaoG=&quot;小关&quot;;</span><br><span class="line">xiaoY=&quot;小燕&quot;;</span><br><span class="line">newStr=&quot;$&#123;xiaoG&#125;+$&#123;xiaoY&#125;&quot;</span><br><span class="line">echo $newStr &quot;在一起&quot;</span><br></pre></td></tr></table></figure></li><li><p>运行结果如下</p><p>  <img src="http://oiu3bjtd5.bkt.clouddn.com/20180305152021849471672.jpg" alt="字符串拼接"></p></li></ul></li><li><p>长度</p><ul><li><p>例子</p>  <figure class="highlight plain"><figcaption><span>shell</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">## 获取字符串长度 ###</span><br><span class="line">str=&quot;你猜我有多长？&quot;;</span><br><span class="line">echo &quot;你的长度是：$&#123;#str&#125;&quot;</span><br></pre></td></tr></table></figure></li><li><p>运行结果</p><p>  <img src="http://oiu3bjtd5.bkt.clouddn.com/20180305152021850973512.jpg" alt="字符串长度"></p></li></ul></li><li><p>截取子串</p><ul><li><p>例子</p><ul><li><p>代码，截取子串的范围 ${str:1:2} -&gt; 截取变量 str 从第2个字符串开始截取长度未2</p>  <figure class="highlight plain"><figcaption><span>shell</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">## 截取子字符串 ##</span><br><span class="line">str=&quot;你截取“小关”试试看&quot;</span><br><span class="line">echo &quot;截取：$&#123;str:4:2&#125;&quot;</span><br></pre></td></tr></table></figure></li><li><p>运行结果<br>  <img src="http://oiu3bjtd5.bkt.clouddn.com/20180305152021854166235.jpg" alt="截取子串"></p></li></ul></li></ul></li><li><p>查找子串的位置</p><ul><li><p>例子</p><ul><li><p>代码，查找子串<strong>“小关”</strong>的位置</p>  <figure class="highlight plain"><figcaption><span>shell</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">## 查找子串位置 ##</span><br><span class="line">str=&quot;你看看“小关”在哪里？&quot;</span><br><span class="line">subStr=&quot;小关&quot;</span><br><span class="line">echo `expr index &quot;$str&quot; $subStr`</span><br></pre></td></tr></table></figure><blockquote><p>因为本人使用的事macos 系统，因为 macos系统使用的是<strong>BSD expr</strong> 不能执行该语句，Linux 使用的是 <strong>GNU expr</strong> 可以执行该语句</p></blockquote></li></ul></li></ul></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Shell-字符串&quot;&gt;&lt;a href=&quot;#Shell-字符串&quot; class=&quot;headerlink&quot; title=&quot;Shell 字符串&quot;&gt;&lt;/a&gt;Shell 字符串&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;序&lt;blockquote&gt;
+&lt;p&gt;shell的数据类型就只有&lt;strong&gt;数字&lt;/strong&gt;和&lt;strong&gt;字符串&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;单引号&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;作用&lt;ul&gt;
+&lt;li&gt;单引号里的内容回被原样输出，转义符、变量的作用将会失效。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;例子&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;代码&lt;/p&gt;
+  &lt;figure class=&quot;highlight plain&quot;&gt;&lt;figcaption&gt;&lt;span&gt;shell&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;name=&amp;apos;小关&amp;apos;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;echo &amp;apos;我的名字叫$name&amp;apos;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;运行效果如下&lt;/p&gt;
+&lt;p&gt;   &lt;img src=&quot;http://oiu3bjtd5.bkt.clouddn.com/20180305152021837664294.jpg&quot; alt=&quot;单引号&quot;&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Shell" scheme="https://xiaoGoO.github.io.git/categories/Shell/"/>
+    
+    
+      <category term="脚本" scheme="https://xiaoGoO.github.io.git/tags/%E8%84%9A%E6%9C%AC/"/>
+    
+      <category term="学习" scheme="https://xiaoGoO.github.io.git/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>002_Shell_变量</title>
+    <link href="https://xiaoGoO.github.io.git/2017/01/01/Shell/002_Shell_%E5%8F%98%E9%87%8F/"/>
+    <id>https://xiaoGoO.github.io.git/2017/01/01/Shell/002_Shell_变量/</id>
+    <published>2017-01-01T13:02:30.000Z</published>
+    <updated>2018-03-13T14:36:45.455Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="基本语法"><a href="#基本语法" class="headerlink" title="基本语法"></a>基本语法</h1><h2 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h2><ul><li>变量命名规则<blockquote><ul><li>首个字符必须为字母（a-z，A-Z）。</li><li>中间不能有空格，可以使用下划线（_）</li><li>不能使用标点符号。</li><li>不能使用bash里的关键字（可用help命令查看保留关键字）。</li></ul></blockquote></li></ul><a id="more"></a><ul><li><p>变量的使用</p>  <figure class="highlight plain"><figcaption><span>Shell</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"># 赋值 注意格式  =号两边不能有空格</span><br><span class="line">name_str=&quot;小关&quot;</span><br><span class="line"># 输出</span><br><span class="line">echo $name_str</span><br><span class="line"># 字符串拼接输出</span><br><span class="line">echo &quot;我的名字叫$name_str&quot;</span><br><span class="line"># 输出效果与 echo &quot;我的名字叫$name_str&quot; 相同  $&#123;变量&#125; 可以防止与接连的字符混淆</span><br><span class="line">echo &quot;我的名字叫$&#123;name_str&#125;&quot;</span><br><span class="line"># &apos; &apos; 符号内的变量，转移符将不生效，会输出 ： 我的名字叫$&#123;name_str&#125;</span><br><span class="line">echo &apos;我的名字叫$&#123;name_str&#125;&apos;</span><br></pre></td></tr></table></figure></li><li><p>只读变量 </p><ul><li><p>变量名前 加上 readonly</p><figure class="highlight plain"><figcaption><span>shell</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">name_str=&quot;小关&quot;</span><br><span class="line">readonly name_str</span><br><span class="line">name_str=&quot;小燕&quot;;</span><br><span class="line">echo &quot;我的名字叫$&#123;name_str&#125;&quot;;</span><br></pre></td></tr></table></figure></li><li><p>脚本运行结果,意思就是说，name_str 是只读变量</p><figure class="highlight plain"><figcaption><span>shell</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./hello_shell.sh: line 2: name_str: readonly variable</span><br></pre></td></tr></table></figure></li><li><p>删除变量</p><ul><li><p>实例，删除变量后不可再次使用，unset不能删除readonly对象</p>  <figure class="highlight plain"><figcaption><span>shell</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">name_str=&quot;小关&quot;;</span><br><span class="line">echo &quot;我的名字叫：$name_str&quot;</span><br><span class="line">## 删除变量</span><br><span class="line">unset name_str;</span><br><span class="line">echo &quot;我的名字叫：$&#123;name_str&#125;&quot;</span><br><span class="line">##</span><br><span class="line">name=&quot;小燕&quot;;</span><br><span class="line">readonly name;</span><br><span class="line">unset name;</span><br><span class="line">echo &quot;自读变量：$&#123;name&#125;&quot;;</span><br></pre></td></tr></table></figure></li><li><p>运行结果<br>  <img src="http://oiu3bjtd5.bkt.clouddn.com/20180305152021833685888.jpg" alt="删除变量"></p></li></ul></li><li>变量类型<ul><li><strong>局部变量</strong>，在shell脚步或者命令创建的变量，仅在当前shell实例有效。</li><li><strong>环境变量</strong>，所有shell 脚本程序都可以有效访问。</li><li><strong>shell变量</strong>，shell内置的系统变量。</li></ul></li></ul></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;基本语法&quot;&gt;&lt;a href=&quot;#基本语法&quot; class=&quot;headerlink&quot; title=&quot;基本语法&quot;&gt;&lt;/a&gt;基本语法&lt;/h1&gt;&lt;h2 id=&quot;变量&quot;&gt;&lt;a href=&quot;#变量&quot; class=&quot;headerlink&quot; title=&quot;变量&quot;&gt;&lt;/a&gt;变量&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;变量命名规则&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;首个字符必须为字母（a-z，A-Z）。&lt;/li&gt;
+&lt;li&gt;中间不能有空格，可以使用下划线（_）&lt;/li&gt;
+&lt;li&gt;不能使用标点符号。&lt;/li&gt;
+&lt;li&gt;不能使用bash里的关键字（可用help命令查看保留关键字）。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+      <category term="Shell" scheme="https://xiaoGoO.github.io.git/categories/Shell/"/>
+    
+    
+      <category term="脚本" scheme="https://xiaoGoO.github.io.git/tags/%E8%84%9A%E6%9C%AC/"/>
+    
+      <category term="学习" scheme="https://xiaoGoO.github.io.git/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
+  
+  <entry>
     <title>001_Shell_环境</title>
-    <link href="https://xiaoGoO.github.io.git/2018/03/13/001-Shell-%E7%8E%AF%E5%A2%83/"/>
-    <id>https://xiaoGoO.github.io.git/2018/03/13/001-Shell-环境/</id>
-    <published>2018-03-13T13:02:25.000Z</published>
-    <updated>2018-03-13T14:07:29.530Z</updated>
+    <link href="https://xiaoGoO.github.io.git/2017/01/01/Shell/001_Shell_%E7%8E%AF%E5%A2%83/"/>
+    <id>https://xiaoGoO.github.io.git/2017/01/01/Shell/001_Shell_环境/</id>
+    <published>2017-01-01T13:02:25.000Z</published>
+    <updated>2018-03-13T14:28:00.533Z</updated>
     
     <content type="html"><![CDATA[<h1 id="序"><a href="#序" class="headerlink" title="序"></a>序</h1><h2 id="Shell"><a href="#Shell" class="headerlink" title="Shell"></a>Shell</h2><blockquote><p>Shell是一款使用<strong>C语言</strong>编写的程序，是用户使用Linux的桥梁。Shell是一种命令语言，又是一种程序设计语言。</p></blockquote><h2 id="Shell-Script-（Shell脚本）"><a href="#Shell-Script-（Shell脚本）" class="headerlink" title="Shell Script （Shell脚本）"></a>Shell Script （Shell脚本）</h2><blockquote><p>Shell Script 是一种由Shell编写的脚本程序。人们经常说的Shell通常指的是Shell Script ,但是你们要清楚Shell与Shell Script 是两种不同的概念。由于简洁起见，本文说的Shell编程指的是Shell Script 。</p></blockquote><a id="more"></a><h2 id="Shell-环境"><a href="#Shell-环境" class="headerlink" title="Shell 环境"></a>Shell 环境</h2><ul><li>Bourne Shell (/usr/bin/sh或者/bin/sh)</li><li>Bourne Again Shell (/bin/bash)</li><li>C Shell (/usr/bin/csh)</li><li>K Shell (/usr/bin/ksh)</li><li><p>Shell for Root (/sbin/sh) </p><blockquote><p>现在很多Linux系统默认集成的是<strong>Bourne Again Shell</strong>,而且简单，免费。 在日常工作中被广泛使用。同时，Bash也是大多数Linux系统默认的Shell。</p></blockquote></li></ul><h2 id="工具"><a href="#工具" class="headerlink" title="工具"></a>工具</h2><ul><li>1、使用文本编辑工具，如果是Linux 系统一般回使用<strong>vim</strong>来编辑（但是本人并不熟悉）,所以接下来我会使用Visual Studio Code 来编辑。</li></ul><h2 id="Hello-Shell"><a href="#Hello-Shell" class="headerlink" title="Hello Shell"></a>Hello Shell</h2><ul><li><p>创建 hello_Shell.sh 文件</p>  <figure class="highlight plain"><figcaption><span>Shell</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># 执行命令 创建shell文件</span><br><span class="line">vim hello_Shell.sh</span><br><span class="line"></span><br><span class="line">#  hello_Shell.sh 内容</span><br><span class="line">#!/bin/bash</span><br><span class="line">echo &quot;Hello Shell !&quot;</span><br></pre></td></tr></table></figure></li><li><p>执行脚本 </p>  <figure class="highlight plain"><figcaption><span>shell</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"># 方法1</span><br><span class="line">sh hello_shell.sh</span><br><span class="line">#方法2</span><br><span class="line">## 先赋予执行权限</span><br><span class="line">chmod +x hello_shell.sh</span><br><span class="line">## 执行脚本</span><br><span class="line">./hello_shell.sh</span><br></pre></td></tr></table></figure></li></ul>]]></content>
     
@@ -36,10 +233,12 @@
     
     </summary>
     
-      <category term="脚本" scheme="https://xiaoGoO.github.io.git/categories/%E8%84%9A%E6%9C%AC/"/>
+      <category term="Shell" scheme="https://xiaoGoO.github.io.git/categories/Shell/"/>
     
     
-      <category term="Shell" scheme="https://xiaoGoO.github.io.git/tags/Shell/"/>
+      <category term="脚本" scheme="https://xiaoGoO.github.io.git/tags/%E8%84%9A%E6%9C%AC/"/>
+    
+      <category term="学习" scheme="https://xiaoGoO.github.io.git/tags/%E5%AD%A6%E4%B9%A0/"/>
     
   </entry>
   
