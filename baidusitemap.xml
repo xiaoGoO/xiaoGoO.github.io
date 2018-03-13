@@ -4,12 +4,12 @@
 
     
   <url>
-    <loc>https://xiaoGoO.github.io.git/2017/01/01/Shell/004-Shell-%E6%95%B0%E7%BB%84/</loc>
-    <lastmod>2018-03-13T14:43:53.678Z</lastmod>
+    <loc>https://xiaoGoO.github.io.git/2018/03/13/node-js%E7%89%88%E6%9C%AC%E7%AE%A1%E7%90%86/</loc>
+    <lastmod>2018-03-13T14:48:03.993Z</lastmod>
     <data>
         <display>
-        <title>004_Shell_数组</title>
-        <pubTime>2017-01-01T14:31:24.000Z</pubTime>
+        <title>node.js版本管理</title>
+        <pubTime>2018-03-13T14:46:53.000Z</pubTime>
         
         <tag>脚本</tag>
          
@@ -18,7 +18,7 @@
          
            
              
-              <breadCrumb title="Shell" url="https://xiaoGoO.github.io.git/categories/Shell/"/>
+              <breadCrumb title="Node" url="https://xiaoGoO.github.io.git/categories/Node/"/>
           
         </display>
     </data>
@@ -26,12 +26,12 @@
 
     
   <url>
-    <loc>https://xiaoGoO.github.io.git/2017/01/01/Shell/006-Shell-%E4%BC%A0%E5%8F%82/</loc>
+    <loc>https://xiaoGoO.github.io.git/2017/01/01/Shell/005-Shell-%E6%B3%A8%E9%87%8A/</loc>
     <lastmod>2018-03-13T14:43:53.678Z</lastmod>
     <data>
         <display>
-        <title>006_Shell_传参</title>
-        <pubTime>2017-01-01T14:33:47.000Z</pubTime>
+        <title>005_Shell_注释</title>
+        <pubTime>2017-01-01T14:32:29.000Z</pubTime>
         
         <tag>脚本</tag>
          
@@ -70,12 +70,34 @@
 
     
   <url>
-    <loc>https://xiaoGoO.github.io.git/2017/01/01/Shell/005-Shell-%E6%B3%A8%E9%87%8A/</loc>
+    <loc>https://xiaoGoO.github.io.git/2017/01/01/Shell/006-Shell-%E4%BC%A0%E5%8F%82/</loc>
     <lastmod>2018-03-13T14:43:53.678Z</lastmod>
     <data>
         <display>
-        <title>005_Shell_注释</title>
-        <pubTime>2017-01-01T14:32:29.000Z</pubTime>
+        <title>006_Shell_传参</title>
+        <pubTime>2017-01-01T14:33:47.000Z</pubTime>
+        
+        <tag>脚本</tag>
+         
+        <tag>学习</tag>
+         
+         
+           
+             
+              <breadCrumb title="Shell" url="https://xiaoGoO.github.io.git/categories/Shell/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://xiaoGoO.github.io.git/2017/01/01/Shell/004-Shell-%E6%95%B0%E7%BB%84/</loc>
+    <lastmod>2018-03-13T14:43:53.678Z</lastmod>
+    <data>
+        <display>
+        <title>004_Shell_数组</title>
+        <pubTime>2017-01-01T14:31:24.000Z</pubTime>
         
         <tag>脚本</tag>
          

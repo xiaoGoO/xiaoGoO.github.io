@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://xiaoGoO.github.io.git/"/>
-  <updated>2018-03-13T14:43:53.678Z</updated>
+  <updated>2018-03-13T14:48:03.993Z</updated>
   <id>https://xiaoGoO.github.io.git/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>node.js版本管理</title>
+    <link href="https://xiaoGoO.github.io.git/2018/03/13/node-js%E7%89%88%E6%9C%AC%E7%AE%A1%E7%90%86/"/>
+    <id>https://xiaoGoO.github.io.git/2018/03/13/node-js版本管理/</id>
+    <published>2018-03-13T14:46:53.000Z</published>
+    <updated>2018-03-13T14:48:03.993Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="使用nvm，管理node版本"><a href="#使用nvm，管理node版本" class="headerlink" title="使用nvm，管理node版本"></a>使用nvm，管理node版本</h1><blockquote><p>因为是开源软件，所以具备大多数开源软件都存在的“版本问题”，版本发展很快，版本前后差异性大，老系统用新版本node跑不过，全局安装的第三方组件和node版本相关造成全局版本混乱</p></blockquote><h2 id="1-nvm主要特点"><a href="#1-nvm主要特点" class="headerlink" title="1. nvm主要特点"></a>1. nvm主要特点</h2><ul><li><ol><li>可安装多版本的node。</li></ol></li><li><ol><li>灵活切换当前的node版本。</li></ol></li><li><ol><li>以沙箱方式全局安装第三方组件到对应版本的node中。</li></ol></li><li><ol><li>通过.vnmrc文件，方便灵活地指定各应用系统所需的node版本进行运行</li></ol></li><li><ol><li>可惜目前只支持linux，OS系统。<h2 id="2-nvm安装"><a href="#2-nvm安装" class="headerlink" title="2. nvm安装"></a>2. nvm安装</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">//使用 brew 安装 nvm</span><br><span class="line">brew install nvm</span><br><span class="line">//其次需要在shell的配置文件~/.bash_profile (如果没有.bash_profile文件需要自行touch .bash_profile)中添加如下内容：</span><br><span class="line"># For NVM</span><br><span class="line">export NVM_DIR=~/.nvm</span><br><span class="line">source $(brew --prefix nvm)/nvm.sh</span><br><span class="line">//然后重新source</span><br><span class="line">source .bash_profile</span><br></pre></td></tr></table></figure></li></ol></li></ul><h2 id="3-使用nvm安装node"><a href="#3-使用nvm安装node" class="headerlink" title="3. 使用nvm安装node"></a>3. 使用nvm安装node</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">//安装当前最新的稳定版。</span><br><span class="line">nvm install stable</span><br><span class="line">//安装指定版本</span><br><span class="line">nvm install 9.4.0</span><br><span class="line">//查看当前版本</span><br><span class="line">nvm current</span><br><span class="line">//切换node版本 </span><br><span class="line">nvm use 9</span><br><span class="line">//显示所有安装的版本</span><br><span class="line">nvm ls</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;使用nvm，管理node版本&quot;&gt;&lt;a href=&quot;#使用nvm，管理node版本&quot; class=&quot;headerlink&quot; title=&quot;使用nvm，管理node版本&quot;&gt;&lt;/a&gt;使用nvm，管理node版本&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;因为是开源软件，所
+      
+    
+    </summary>
+    
+      <category term="Node" scheme="https://xiaoGoO.github.io.git/categories/Node/"/>
+    
+    
+      <category term="脚本" scheme="https://xiaoGoO.github.io.git/tags/%E8%84%9A%E6%9C%AC/"/>
+    
+      <category term="学习" scheme="https://xiaoGoO.github.io.git/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
   
   <entry>
     <title>007_Shell_运算符</title>

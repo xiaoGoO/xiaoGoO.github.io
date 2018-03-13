@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[node.js版本管理]]></title>
+    <url>%2F2018%2F03%2F13%2Fnode-js%E7%89%88%E6%9C%AC%E7%AE%A1%E7%90%86%2F</url>
+    <content type="text"><![CDATA[使用nvm，管理node版本 因为是开源软件，所以具备大多数开源软件都存在的“版本问题”，版本发展很快，版本前后差异性大，老系统用新版本node跑不过，全局安装的第三方组件和node版本相关造成全局版本混乱 1. nvm主要特点 可安装多版本的node。 灵活切换当前的node版本。 以沙箱方式全局安装第三方组件到对应版本的node中。 通过.vnmrc文件，方便灵活地指定各应用系统所需的node版本进行运行 可惜目前只支持linux，OS系统。2. nvm安装12345678//使用 brew 安装 nvmbrew install nvm//其次需要在shell的配置文件~/.bash_profile (如果没有.bash_profile文件需要自行touch .bash_profile)中添加如下内容：# For NVMexport NVM_DIR=~/.nvmsource $(brew --prefix nvm)/nvm.sh//然后重新sourcesource .bash_profile 3. 使用nvm安装node12345678910//安装当前最新的稳定版。nvm install stable//安装指定版本nvm install 9.4.0//查看当前版本nvm current//切换node版本 nvm use 9//显示所有安装的版本nvm ls]]></content>
+      <categories>
+        <category>Node</category>
+      </categories>
+      <tags>
+        <tag>脚本</tag>
+        <tag>学习</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[007_Shell_运算符]]></title>
     <url>%2F2017%2F01%2F01%2FShell%2F007-Shell-%E8%BF%90%E7%AE%97%E7%AC%A6%2F</url>
     <content type="text"><![CDATA[运算符 序 shell 支持多种运算符例如： 算术运算符 关系运算符 布尔运算符 字符串运算符 文件测试运算符 原生的bash不支持算数运算符，需要借助其他命令来完成，例如： awk expr(比较常用) expr 格式 1值=`expr 值1 运算符 值2` 注意: 表达式和运算符之间要有空格，例如 2+2 是不对的，必须写成 2 + 2，这与我们熟悉的大多数编程语言不一样。 完整的表达式要被 包含，注意这个字符不是常用的单引号，在 Esc 键下边。 所有运算符 运算符 | 说明 | 例子 — | — | — | 加 | expr 1 + 1 =&gt; 2 | 减 | expr 2 - 1 =&gt; 1 | 乘 | expr 2 \* 2 =&gt; 4/ | 除 | expr 2 / 2 =&gt; 1% | 除余 | expr 2 % 2 =&gt; 0= | 赋值符 | a=$b 就是将变量b的值赋予给变量a== | 判断符，等于 | [ $a == $b ] 判断变量a是否等于变量b,如果相等返回true，否则false!= | 判断符，不等于 | [ $a != $b ] 与 == 相反]]></content>
